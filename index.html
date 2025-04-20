@@ -1,103 +1,92 @@
-/*
-  Aleena's Portfolio Website
-  Structure:
-  - index.html: Main HTML file
-  - style.css: Styling
-  - script.js (optional): Interactive behavior
-  - images/: Folder for profile pic or project thumbnails
-*/
-
-// index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aleena | Portfolio</title>
+  <title>Aleena | Software Engineer</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <!-- Navbar -->
   <header>
-    <h1>Aleena Rafiq</h1>
-    <p>Software Engineer | UI/UX Designer</p>
+    <nav>
+      <h1>Aleena</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="about">
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h2>Hello, I’m <span>Aleena</span></h2>
+      <p>A passionate Software Engineering student who crafts digital experiences using code and creativity.</p>
+      <a href="#projects" class="btn">See My Work</a>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section class="about" id="about">
     <h2>About Me</h2>
-    <p>
-      I'm Aleena Rafiq, a passionate Software Engineer and aspiring UI/UX Designer currently pursuing my BS in Software Engineering at FAST National University. I thrive on crafting intuitive digital experiences and building impactful web solutions. Skilled in MERN Stack, Java, C++, and Figma, I love combining design thinking with full-stack development to solve real-world problems.
-    </p>
+    <p>I’m currently pursuing a BS in Software Engineering. I'm passionate about building intelligent systems, web applications, and automation tools. I enjoy learning new tech and applying it to real-world projects.</p>
   </section>
 
-  <section id="skills">
-    <h2>Skills & Interests</h2>
-    <ul>
-      <li>MERN Stack Web Development</li>
-      <li>Java Development with SQL</li>
-      <li>C++</li>
-      <li>Front-end Development</li>
-      <li>UI/UX Designing (Figma, Usability Testing)</li>
-      <li>Software Requirements Engineering</li>
-    </ul>
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skill-grid">
+      <div>Java</div>
+      <div>Python</div>
+      <div>HTML & CSS</div>
+      <div>JavaScript</div>
+      <div>MySQL</div>
+      <div>Git & GitHub</div>
+      <div>Data Structures</div>
+      <div>OOP</div>
+    </div>
   </section>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <h3>UI/UX Designer – Maima Soft (Remote)</h3>
-    <p>June 2024 – August 2024</p>
-    <ul>
-      <li>Designed user flows and wireframes (Figma)</li>
-      <li>Collaborated with devs to implement specs</li>
-      <li>Participated in brainstorming & usability testing</li>
-      <li>Improved UI based on stakeholder feedback</li>
-    </ul>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <p><strong>BS in Software Engineering</strong><br />FAST National University (2022–2026)</p>
-    <p><strong>Intermediate</strong><br />Punjab Group of Colleges (2020–2022)</p>
-  </section>
-
-  <section id="projects">
+  <!-- Projects -->
+  <section class="projects" id="projects">
     <h2>Projects</h2>
-    <div class="project">
-      <h3><a href="https://github.com/fastDevelopers10/METRO-POS-SYSTEM" target="_blank">POS System</a></h3>
-      <p>Retail system managing sales, inventory, and customer transactions. (Java, MySQL)</p>
-    </div>
-    <div class="project">
-      <h3>Billing Management System</h3>
-      <p>Tracks billing, payments, and invoice generation. (Java)</p>
-    </div>
-    <div class="project">
-      <h3>Weather Application</h3>
-      <p>Real-time weather app using a local DB. (Java, MySQL)</p>
-    </div>
-    <div class="project">
-      <h3>Traffic Management System</h3>
-      <p>Simulates traffic and optimizes signal timings. (C++)</p>
-    </div>
-    <div class="project">
-      <h3>Library Management System</h3>
-      <p>Book/member/borrowing system. (C++)</p>
-    </div>
-    <div class="project">
-      <h3>Team Project Video</h3>
-      <p>Watch our demo posted by my teammate on <a href="https://www.linkedin.com/posts/your-video-link-here" target="_blank">LinkedIn</a>.</p>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Disease Prediction Chatbot</h3>
+        <p>Uses symptoms to predict diseases and provide home remedies using ML + interactive decision trees.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>LESCO Billing System</h3>
+        <p>A Java application with file I/O and GUI features that automates electricity billing processes.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio hosted with GitHub Pages using HTML/CSS only, responsive and animated.</p>
+        <a href="#">View Project</a>
+      </div>
     </div>
   </section>
 
-  <section id="contact">
+  <!-- Contact -->
+  <section class="contact" id="contact">
     <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:alinarafiq0676@gmail.com">alinarafiq0676@gmail.com</a></p>
-    <p>Phone: +92 320 6570065</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/aleena-rafiq-4480a4278/" target="_blank">@aleena-rafiq</a></p>
-    <p>GitHub: <a href="https://github.com/20alina03" target="_blank">@20alina03</a></p>
+    <p>Have a project or opportunity? Let’s connect!</p>
+    <a href="mailto:aleena@example.com" class="btn">Email Me</a>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Aleena Rafiq</p>
+    <p>&copy; 2025 Aleena. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://github.com/20alina03" target="_blank">GitHub</a>
+      <a href="#" target="_blank">LinkedIn</a>
+    </div>
   </footer>
 </body>
 </html>
-
